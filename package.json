@@ -20,6 +20,7 @@
     "deploy": "NODE_ENV=production PAYLOAD_SECRET=ignore payload migrate && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
+    "preinstall": "cat package-lock.json && cat package.json",
     "postinstall": "patch-package"
   },
   "cloudflare": {
